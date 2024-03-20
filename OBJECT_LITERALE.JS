@@ -1,11 +1,13 @@
 // OBJECT LITERAL KNOWN AS OBJECT INITIALIZER
 var name1 = "sagar"
 var course = "computer science"
+
+
 var ob = {
     name1,
     course
 }
-// console.log(ob);
+console.log(ob);
 
 // USE VARIABLE AS A PROPERTY
 var n = 'student'
@@ -21,11 +23,11 @@ let ob1 = {
 // console.log(ob1.detail());
 
 
-// NEW FUNCTION SYNTAX
+// NEW FUNCTION SYNTAX IN ES6 JAVASCRIPT
 
 let ob2 = {
     [n]: "sagar",
-    detail(){
+    detail() {
         return this.student
     }
 }
@@ -37,10 +39,11 @@ let ob2 = {
 
 // RETURN ARGUMENTS AS A OBJECT
 let name2 = "sandeep singh"
-let date= "march"
-function classes(name,date){
-   return {name,date}
+let date = "march"
+function classes(name, date) {
+    return { name, date }
 }
-let s = classes(name2,date);
-console.log(s.date);
-console.log(typeof(s));
+
+let s = classes(name2, date);
+// console.log(s.date);
+// console.log(typeof (s));
